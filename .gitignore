@@ -8,3 +8,6 @@ logs/
 
 # Airflow webserver configuration file
 webserver_config.py
+
+# Python bytecode
+dags/__pycache__/
