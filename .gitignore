@@ -1,0 +1,10 @@
+# Airflow webserver PID, Airflow configuration, and Airflow database files
+airflow-webserver.pid
+airflow.cfg
+airflow.db
+
+# Airflow logs directory
+logs/
+
+# Airflow webserver configuration file
+webserver_config.py
