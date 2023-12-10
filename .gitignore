@@ -10,4 +10,4 @@ logs/
 webserver_config.py
 
 # Python bytecode
-dags/__pycache__/
+dags/__pycache__/simple_hello_world.cpython-311.pyc
