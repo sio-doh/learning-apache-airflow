@@ -5,13 +5,14 @@ from airflow import DAG
 from airflow.operators.python_operator import PythonOperator
 import os 
 
+INSURANCE = os.getenv("INSURANCE")
+
 default_args = {
     'owner': 'siobhan.doherty'
 }
 
 def read_csv_file():
-    insurance_path = os.getenv("INSURANCE")
-    df = pd.read_csv(insurance_path)
+    df = pd.read_csv(INSURANCE)
     print(df)
     return df.to_json()
 
